@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space4 Coworking</title>
+    <meta name="description" content="Espaço para seu escritório disponível em São Roque" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>4Space Coworking</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="{% url 'menu_home' %}">Apresentação</a></li>
+                <li><a href="{% url 'menu_ambientes' %}">Ambientes</a></li>
+                <li><a href="{% url 'menu_planos' %}">Planos</a></li>
+                <li><a href="{% url 'menu_agendamento' %}">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="esquerda_ambientes">
+            <img src="{% static '/images/sala1.png' %}">
+            <img src="{% static '/images/sala4.jpg' %}">
+            <img src="{% static '/images/sala3.jpg' %}">    
+        </section>
+
+        <section class="direita_ambientes">
+            <h2>Bem estar, tecnologia e recursos, tudo num único lugar!</h2>
+            <div>
+                <h1>Espaço físico</h1>
+                <ul>
+                    <li>Quatro (4) salas individuais;</li>
+                    <li>Três (3) salas compartilhadas para até 5 pessoas;</li>
+                    <li>Uma (1) sala de reunião de 15 assentos;</li>
+                    <li>Recepção;</li>
+                    <li>Cadeiras, mesas e poltronas padrão executive;</li>
+                    <li>Ar climatizado em todos os ambientes fechados;</li>
+                    <li>Copa e cozinha com serviços de copeira;</li>
+                    <li>Lago artificial com ampla área verde;</li>
+                    <li>Estacionamento para motos;</li>
+                    <li>Área para fumantes.</li>
+                </ul>
+            </div>
+                
+            <div>
+                <h1>Recursos tecnologicos</h1>
+                <ul>
+                    <li>Impressão a laser, mono e colorida centralizada;</li>
+                    <li>Cobertura total Wi-Fi em todos os ambientes;</li>
+                    <li>Servidor de armazenamento com planos mensal e trimestral;</li>
+                    <li>Chave de segurança por CPF;</li>
+                    <li>Aluguel de notebooks para uso local ou externo;</li>
+                    <li>Três salas com PC Desktop;</li>
+                    <li>Projetor multimídia na sala de reunião;</li>
+                </ul>
+            </div>
+
+            <div>
+                <img src="{% static '/images/lago.jpg' %}">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="dados">
+            <p>Rua Honório Mendes de Moraes, 88 - Esplanada Mendes - São Roque/SP</p>
+            <p>Expediente: Segunda à Sexta: 8h00 às 19h00  **  Sábados: 8h00 às 16h00</p>
+        </div>
+        <div class="autor">
+            <p>Copyright 4Space 2024</p>
+            <p>Desenvolvido equipe Projeto Integrador II - UNIVESP</p>
+        </div>
+    </footer>
+</body>
+</html>

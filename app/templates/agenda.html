@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space4 Coworking</title>
+    <meta name="description" content="Espaço para seu escritório disponível em São Roque" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>4Space Coworking</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="{% url 'menu_home' %}">Apresentação</a></li>
+                <li><a href="{% url 'menu_ambientes' %}">Ambientes</a></li>
+                <li><a href="{% url 'menu_planos' %}">Planos</a></li>
+                <li><a href="{% url 'menu_agendamento' %}">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="card-body">
+            <h1>Solicitação de Reserva</h1>
+            <hr>
+            <form action="{% url 'menu_agendamento' %}" method="post">
+
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <button class="btn-conf" type="submit">Confirmar</button>
+                <a href="{% url 'menu_agendamento' %}" class="btn-canc">Cancelar</a>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="dados">
+            <p>Rua Honório Mendes de Moraes, 88 - Esplanada Mendes - São Roque/SP</p>
+            <p>Expediente: Segunda à Sexta: 8h00 às 19h00  **  Sábados: 8h00 às 16h00</p>
+        </div>
+        <div class="autor">
+            <p>Copyright 4Space 2024</p>
+            <p>Desenvolvido equipe Projeto Integrador II - UNIVESP</p>
+        </div>
+    </footer>
+</body>
+</html>

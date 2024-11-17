@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space4 Coworking</title>
+    <meta name="description" content="Espaço para seu escritório disponível em São Roque" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>4Space Coworking</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="{% url 'menu_home' %}">Apresentação</a></li>
+                <li><a href="{% url 'menu_ambientes' %}">Ambientes</a></li>
+                <li><a href="{% url 'menu_planos' %}">Planos</a></li>
+                <li><a href="{% url 'menu_agendamento' %}">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="esquerda_home">
+        <h2>O que você ou sua empresa encontra em nosso empreendimento?</h2>
+        <div>
+            <h1>Localização Estratégica</h1>
+            <p>Nosso espaço está situado em uma localização estratégica, proporcionando fácil acesso aos principais pontos da cidade. Com uma localização privilegiada, você terá mais conveniência e visibilidade para seus clientes e parceiros de negócios.
+            Sem Compromissos de Espaço Físico: Aqui no Coworking Conecte, você não está preso a contratos de longo prazo ou compromissos de espaço físico. Oferecemos uma flexibilidade incomparável, permitindo que você escolha apenas os serviços de que precisa, pelo tempo que precisar.</p>
+        </div>
+        <div>        
+            <h1>Recepção e Controle de Correspondência</h1>
+            <p>Nossa equipe de recepção está pronta para receber suas correspondências e pacotes, garantindo que você nunca perca uma entrega importante. Deixe-nos cuidar dos detalhes administrativos para que você possa se concentrar no crescimento do seu negócio.</p>
+        </div>
+        <div>
+            <h1>8 Horas por mês de Sala de Reunião</h1>
+            <p>Além disso, você terá acesso a salas de reunião modernas e bem equipadas por até 8 horas por mês. Realize suas reuniões com clientes, parceiros ou equipe em um ambiente profissional e inspirador.</p> 
+        </div>
+        <div>
+            <h1>Desconto em Serviços Adicionais</h1>
+            <p>Como membro do Coworking Conecte, você também terá acesso a descontos exclusivos em uma variedade de serviços adicionais, incluindo impressão, copiadora, serviços de secretariado e muito mais.</p>
+        </div>
+        <div>
+            <h1>Internet, Luz, Água e Café à Vontade</h1>
+            <p>Além disso, fornecemos internet de alta velocidade, luz, água e café à vontade para garantir que você tenha tudo o que precisa para trabalhar com conforto e eficiência.</p> 
+        </div>
+        <div>
+            <h1>Suporte Premium</h1>
+            <p>E, é claro, nossa equipe dedicada de suporte está sempre disponível para ajudá-lo com qualquer dúvida ou solicitação que você possa ter. Com o suporte premium do Coworking Conecte, você nunca estará sozinho em sua jornada empresarial.</p>  
+        </div>
+
+        <h2>Quais são os benefícios de usar um escritório virtual?</h2>
+        
+        <div>
+            <h1>Economia</h1>
+            <p>Imagine poder reduzir significativamente seus custos operacionais. Com o Coworking Conecte, isso é totalmente possível. Ao optar por nosso serviço de escritório virtual, você pode economizar consideravelmente em despesas como aluguel, contas de água, luz, internet e até mesmo em custos de manutenção de um escritório tradicional. Essa economia pode ser direcionada para investimentos mais estratégicos em seu negócio, permitindo que você cresça de maneira mais eficiente e sustentável.</p> 
+        </div>
+
+        <div>
+            <h1>Flexibilidade</h1>
+            <p>Além da economia, oferecemos a você uma flexibilidade que é essencial nos dias de hoje. Com nosso serviço de escritório virtual, você tem a liberdade de trabalhar de onde quiser e quando quiser. Não mais preso a um local físico, você pode ajustar seus horários de trabalho de acordo com suas necessidades e compromissos pessoais. Seja em casa, em um café ou em qualquer lugar do mundo, o Coworking Conecte proporciona a flexibilidade necessária para equilibrar trabalho e vida pessoal de forma eficaz.</p>  
+        </div>
+
+        <div>
+            <h1>Tecnologia Avançada</h1>
+            <p>Aqui no Coworking Conecte, estamos comprometidos em oferecer não apenas um espaço de trabalho, mas sim uma plataforma equipada com tecnologia de ponta. Desde sistemas de segurança avançados até soluções de colaboração online, nossa infraestrutura tecnológica está pronta para impulsionar a eficiência do seu negócio. Com acesso a ferramentas e recursos digitais inovadores, você poderá realizar suas tarefas de maneira mais rápida, eficiente e segura, aumentando assim sua produtividade e qualidade do trabalho</p> 
+        </div>
+
+        <p>Com todos esses benefícios e muito mais, o Coworking 4Space é a escolha ideal para profissionais que buscam um ambiente de trabalho flexível, profissional e inspirador. Não perca mais tempo, junte-se a nós hoje mesmo e dê o próximo passo rumo ao sucesso!</p>
+    </section>
+    
+    <section class="direita_home">
+        <img src="{% static 'images/pessoastec1.jpg' %}">
+        <img src="{% static 'images/pessoastec2.jpg' %}">
+        <img src="{% static 'images/pessoastec3.jpg' %}">
+    </section>
+
+    <footer>
+        <div class="dados">
+            <p>Rua Honório Mendes de Moraes, 88 - Esplanada Mendes - São Roque/SP</p>
+            <p>Expediente: Segunda à Sexta: 8h00 às 19h00  **  Sábados: 8h00 às 16h00</p>
+        </div>
+        <div class="autor">
+            <p>Copyright 4Space 2024</p>
+            <p>Desenvolvido equipe Projeto Integrador II - UNIVESP</p>
+        </div>
+    </footer>
+</body>
+</html>

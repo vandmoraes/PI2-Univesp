@@ -1,0 +1,204 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space4 Coworking</title>
+    <meta name="description" content="Espaço para seu escritório disponível em São Roque" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>4Space Coworking</p>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="{% url 'menu_home' %}">Apresentação</a></li>
+                <li><a href="{% url 'menu_ambientes' %}">Ambientes</a></li>
+                <li><a href="{% url 'menu_planos' %}">Planos</a></li>
+                <li><a href="{% url 'menu_agendamento' %}">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="planos">
+
+            <div class="salas">
+                <h1>Locação de Salas</h1>
+                <p>Espaços de alto padrão para reuniões e treinamentos</p>
+            </div>
+
+            <table class="tabela1">
+                <thead>
+                    <tr>
+                        <th>AVULSO</th>
+                        <th>CLIENTES</th>
+                        <th>AVULSO</th>
+                        <th>CLIENTES</th>
+                        <th>PACOTE 20hs</th>
+                        <th>PACOTE 40hs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plano 1</td>
+                        <td>Plano 2</td>
+                        <td>Plano 3</td>
+                        <td>Plano 4</td>
+                        <td>Plano 5</td>
+                        <td>Plano 6</td>
+                    </tr>
+                    <tr>
+                        <td>Sala individual</td>
+                        <td>Sala individual</td>
+                        <td>Sala para até 5 pessoas</td>
+                        <td>Sala para até 5 pessoas</td>
+                        <td>Sala para até 3 pessoas</td>
+                        <td>Sala para até 5 pessoas</td>
+                    </tr>
+                    <tr>
+                        <td>De 1 a 3 horas - R$ 50,00/hora</td>
+                        <td>De 1 a 3 horas - R$ 30,00/hora</td>
+                        <td>De 1 a 3 horas - R$ 70,00/hora</td>
+                        <td>De 1 a 3 horas - R$ 50,00/hora</td>
+                        <td>De 1 a 3 horas - R$ 50,00/hora</td>
+                        <td>De 1 a 3 horas - R$ 50,00/hora</td>
+                    </tr>
+                    <tr>
+                        <td>De 4 a 7 horas - R$ 35,00/hora</td>
+                        <td>De 4 a 7 horas - R$ 25,00/hora</td>
+                        <td>De 4 a 7 horas - R$ 55,00/hora</td>
+                        <td>De 4 a 7 horas - R$ 38,00/hora</td>
+                        <td>De 4 a 7 horas - R$ 38,00/hora</td>
+                        <td>De 4 a 7 horas - R$ 38,00/hora</td>                 
+                    </tr>
+                    <tr>
+                        <td>Diária 8 horas - R$ 220,00</td>
+                        <td>Diária 8 horas - R$ 180,00</td>
+                        <td>Diária 8 horas - R$ 320,00</td>
+                        <td>Diária 8 horas - R$ 280,00</td>
+                        <td>Diária 8 horas - R$ 280,00</td>
+                        <td>Diária 8 horas - R$ 280,00</td>   
+                    </tr>
+                    <tr>                
+                        <td>* Bônus 2 horas adicionais</td>  
+                        <td>* Bônus 2 horas adicionais</td>    
+                        <td>* Bônus 2 horas adicionais</td>    
+                        <td>* Bônus 2 horas adicionais</td>    
+                        <td>* Bônus 2 horas adicionais</td>    
+                        <td>* Bônus 2 horas adicionais</td>                           
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <a href="{% url 'menu_agendamento' %}"><img src="{% static '/images/botao2.png' %}" class="btn-res"></a>
+
+            <div class="endereco">
+                <h1>Escritório Virtual</h1>
+                <p>Pacotes para profissionais que desejam divulgar um endereço comercial/telefone, sem ter escritório físico</p>
+            </div>
+            
+            <table class="tabela2">
+                <thead>
+                    <tr>
+                        <th>ENDEREÇO BÁSICO</th>
+                        <th>ENDEREÇO COMPLETO</th>
+                        <th>ENDEREÇO PLUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plano 7</td>
+                        <td>Plano 8</td>
+                        <td>Plano 9</td>
+                    </tr>
+                    <tr>
+                        <td>R$ 135,00 /mês</td>
+                        <td>R$ 210,00 /mês</td>
+                        <td>R$ 260,00 /mês</td>
+                    </tr>
+                    <tr>
+                        <td>4h mensais de estação de trabalho</td>
+                        <td>4h mensais de estação de trabalho</td>
+                        <td>4h mensais de estação de trabalho</td>
+                    </tr>
+                    <tr>
+                        <td>Hora excedente R$ 10,00</td>
+                        <td>Hora excedente R$ 10,00</td>
+                        <td>Hora excedente R$ 10,00</td>            
+                    </tr>
+                    <tr>
+                        <td>R$ 30/h de uso da sala de reunião</td>
+                        <td>R$ 30/h de uso da sala de reunião</td>
+                        <td>R$ 30/h de uso da sala de reunião</td>
+                    </tr>
+                    <tr>                
+                        <td>Não inclui linha telefônica</td>  
+                        <td>Linha telefônica VoIP + 100 atendimentos</td>  
+                        <td>Linha telefônica VoIP + 100 atendimentos</td>                     
+                    </tr>
+                </tbody>
+            </table>
+        
+            <a href="{% url 'menu_agendamento' %}"><img src="{% static '/images/botao2.png' %}" class="btn-res"></a>
+
+        </div>
+
+        <div>
+            <h4>Consulte abaixo, sua reserva</h4>
+
+            <table class="tab_agenda">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>RG</th>
+                        <th>E-mail</th>
+                        <th>Data inicio</th>
+                        <th>Data final</th>
+                        <th>Horario inicio</th>
+                        <th>Horario final</th>
+                        <th>Forma pagto</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                    {% for agenda in agenda %}
+                        <tr>
+                            <td>{{agenda.rg_cliente}}</td>
+                            <td>{{agenda.nome_cliente}}</td>
+                            <td>{{agenda.email_cliente}}</td>
+                            <td>{{agenda.data_inicio}}</td>
+                            <td>{{agenda.data_fim}}</td>
+                            <td>{{agenda.hora_inicio}}</td>
+                            <td>{{agenda.hora_fim}}</td>
+                            <td>{{agenda.pagto}}</td>
+                            <td>   
+                                <a class="btn-exc">Excluir</a>
+                            </td>
+                        </tr>                        
+                    {% endfor %}
+    
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="dados">
+            <p>Rua Honório Mendes de Moraes, 88 - Esplanada Mendes - São Roque/SP</p>
+            <p>Expediente: Segunda à Sexta: 8h00 às 19h00  **  Sábados: 8h00 às 16h00</p>
+        </div>
+        <div class="autor">
+            <p>Copyright 4Space 2024</p>
+            <p>Desenvolvido equipe Projeto Integrador II - UNIVESP</p>
+        </div>
+    </footer>
+</body>
+</html>

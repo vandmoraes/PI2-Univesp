@@ -1,0 +1,345 @@
+/* Configuração da página zerando margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Configuração do cabeçalho da página */
+header {
+    background-color: #0b0720;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        list-style: none;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        align-items: center;
+        padding: 40px;   
+    }
+
+    .logo {
+        display: flex;
+        margin-left: 100px;
+        padding: 10px;
+        font-family: 'Kavoon';
+        font-style: normal;
+        font-weight: 600px;
+        font-size: 50px;
+        line-height: 40px;
+        color: hsl(46, 82%, 52%);
+    }
+
+/* Configuração rodapé */
+footer {
+    background-color: #0b0720;
+    height: 120px;
+    align-items: center;
+}
+
+    .dados {
+        font-size: 0.9rem;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-left: 5px;
+        color: white;
+    }
+
+    .autor {
+        font-size: 0.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+
+/* Configuraçào do corpo principal - todas páginas*/
+main {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(150, 172, 175)
+
+}
+
+
+
+/* Configuraçào do corpo principal - HOME*/
+    .esquerda_home {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 40%;
+        height: 800px;
+        justify-content: center;
+
+
+    }
+
+    .esquerda_home h2 {
+        align-content: center;
+        color: blue;
+        padding: 12px;
+    }
+
+    .esquerda_home div {
+        padding: 12px;
+    }
+
+    .esquerda_home > div > h1 {
+        background: brown;
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .esquerda_home > div > p {
+        font-size: 18px;
+    }
+
+
+    .direita_home {
+/*        display: flex;
+        flex-wrap: wrap;
+        width: 48%;
+*/
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        justify-content: center;
+    }
+
+    .direita_home img {
+        align-items: center;
+        max-width: 90%;
+        padding: 15px;
+        justify-content: center;
+    }
+
+
+    .tela_registros {
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+    }
+
+
+
+/* Configuraçào do corpo principal - AMBIENTES*/
+    .esquerda_ambientes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .esquerda_ambientes img {
+        width: 530px;
+        height: 380px;
+        padding: 10px;
+    }
+
+
+    .direita_ambientes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: left;
+    }
+
+    .direita_ambientes div {
+        padding: 20px;
+    }
+
+    .direita_ambientes h2 {
+        color: blue;
+        padding-bottom: 30px;
+    }
+
+    .direita_ambientes h1 {
+        background: brown;
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .direita_ambientes li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font: bold;
+        padding: 6px;
+    }
+
+    .direita_ambientes img {
+        align-items: center;
+        width: 600px;
+        height: 400px;
+
+    }
+
+
+
+
+/* Configuraçào do corpo principal - PLANOS*/
+.planos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .tabela1, .tabela2 {
+        width: 95%;
+        text-align: center;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .tabela1 thead, .tabela2 thead {
+        width: 250px;
+        background-color: rgb(4, 7, 7);
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .tabela1 tbody tr:nth-child(2n), .tabela2 tbody tr:nth-child(2n) {
+        background-color: #ccc;
+    }
+
+    .tabela1 img, .tabela2 img {
+        width: 150px;
+        height: 50px;
+        padding-top: 15px;
+    }
+
+
+    .btn-edit {
+        width: 55px;
+        background-color: yellowgreen;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .btn-exc {
+        width: 70px;
+        height: 80px;
+        background-color: green;
+        font-size: 14px;
+        font-weight: normal;
+        color: white;
+    }
+
+
+    .btn-canc {
+        width: 90px;
+        height: 80px;
+        background-color: red;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .btn-conf {
+        width: 90px;
+        height: 30px;
+        background-color: blue;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .btn-res {
+        padding: 20px;
+        width: 170px;
+        height: 50px;
+    }
+
+
+.rel_agenda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cad_agenda {
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+}
+
+    .tab_agenda {
+        padding: 10px;
+        width: 150%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: normal;
+        align-items: center;
+    }
+
+    .tab_agenda thead {
+        width: 80%;
+        background-color: orange;
+        font-weight: bold;
+        color: black;
+    }
+
+
+.salas {
+    width: 95%;
+    padding: 60px;
+    text-align: center;
+}
+
+    .salas h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: blue;
+    }
+
+    .salas p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+.endereco {
+    width: 95%;
+    padding: 60px;
+    text-align: center;
+}
+
+    .endereco h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: blue;
+    }
+
+    .endereco p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
